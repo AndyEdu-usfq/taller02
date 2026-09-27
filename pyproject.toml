@@ -3,8 +3,17 @@ name = "taller02"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12,<=3.14.7"
-dependencies = []
+requires-python = ">=3.12,<3.14"
+dependencies = [
+	"ipykernel>=6.29,<7",
+	"matplotlib>=3.8,<4",
+	"numpy>=1.26,<2",
+	"qdrant-client>=1.12,<2",
+	"scikit-learn>=1.4,<2",
+	"sentence-transformers>=3,<6",
+	"torch>=2.0,<2.3",
+	"transformers>=4.41,<5",
+]
 
 [project.scripts]
 taller02 = "taller02:main"
